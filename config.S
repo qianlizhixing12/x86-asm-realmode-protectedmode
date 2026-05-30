@@ -1,0 +1,10 @@
+.equ core_base_address,     0x00040000   # 内核加载的起始内存地址
+.equ core_start_sector,     1            # 内核的起始逻辑扇区号
+.equ app_start_sector,      50           # app的起始逻辑扇区号
+.equ mem_4gb_data_seg_sel,  0x0008       # 4GB数据段的段选择子，0x0008=0000000000001_000B
+.equ mbr_code_seg_sel,      0x0010       # mbr代码段的段选择子，0x0010=0000000000010_000B
+.equ mem_stack_seg_sel,     0x0018       # 栈段的段选择子，0x0018=0000000000011_000B
+.equ video_ram_seg_sel,     0x0020       # 视频显示缓冲区的段选择子，0x0020=0000000000100_000B
+.equ sys_routine_seg_sel,   0x0028       # 系统公共例程代码段的选择子，0x0028=0000000000101_000B
+.equ core_data_seg_sel,     0x0030       # 内核数据段选择子，0x0030=0000000000110_000B
+.equ core_code_seg_sel,     0x0038       # 内核代码段选择子，0x0038=0000000000111_000B
